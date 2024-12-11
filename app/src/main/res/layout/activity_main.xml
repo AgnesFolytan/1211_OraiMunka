@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="25dp"
+  tools:context="com.example.restapi_people.MainActivity">
+
+  <LinearLayout
+    android:id="@+id/formLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="nev"
+      android:id="@+id/nameEditText"
+      android:inputType="textPersonName"/>
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="mennyiseg"
+      android:id="@+id/mennyisegEditText"
+      android:inputType="number"/>
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="darab/ar"
+      android:id="@+id/darab_arEditText"
+      android:inputType="number"/>
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="kategoria"
+      android:id="@+id/kategoraEditText"
+      android:inputType="text"/>
+
+    <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/addButton"
+      android:text="Hozzáadás"
+      android:textSize="20sp"/>
+
+    <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/cancelButton"
+      android:text="Mégse"
+      android:textSize="20sp"/>
+
+    <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/modifyButton"
+      android:text="Módosítás"
+      android:textSize="20sp"/>
+
+  </LinearLayout>
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/showAddFormButton"
+    android:text="Hozzáadás"
+    android:textSize="20sp" />
+
+  <ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/itemListView"/>
+
+</LinearLayout>
